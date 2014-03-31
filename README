@@ -13,7 +13,7 @@ To install
 There's a file in this directory called .linky. Copy it to your home directory (or just use it from here) and source
 in your .bashrc by adding this line:
 
-  [ -f .linky ] && . .linky
+  [ -f ~/.linky ] && . ~/.linky
 
 Start a new shell.
 
