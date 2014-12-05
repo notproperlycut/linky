@@ -1,8 +1,8 @@
-go() {
+to() {
 	pushd $* > /dev/null
 }
 
-og() {
+ot() {
 	popd $* > /dev/null
 }
 
@@ -22,7 +22,7 @@ cdd() {
 	cd `readlink -e ~/linky/$link`
 }
 
-god() {
+tod() {
 	link=${1:-default}
 	go `readlink -e ~/linky/$link`
 }
