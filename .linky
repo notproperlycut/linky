@@ -24,7 +24,7 @@ cdd() {
 
 tod() {
 	link=${1:-default}
-	go `readlink -e ~/linky/$link`
+	to `readlink -e ~/linky/$link`
 }
 
 pwdd() {
@@ -44,4 +44,4 @@ _lsd() {
     COMPREPLY=( $(compgen -W "default `ls ~/linky`" -- $cur) )
 }
 
-complete -F _lsd red rmd cdd god pwdd
+complete -F _lsd red rmd cdd tod pwdd
