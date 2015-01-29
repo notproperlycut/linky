@@ -6,7 +6,7 @@ pushd and popd.
 
 Use it to quickly jump to some directory that you often have to visit, but that has a long path that's a pain to type out.
 
-You even get tab-completion! And you get to use commands called "god" and "lsd".
+You even get tab-completion!
 
 To install
 ----------
@@ -40,9 +40,9 @@ $ cdd foo ; pwd
 /some/long/path/thats/a/pain/to/type/and/remember
 
 $ # We can use our links with the directory stack
-$ god bar ; pwd 
+$ tod bar ; pwd 
 /some/new/path
-$ og ; pwd 
+$ ot ; pwd 
 /some/long/path/thats/a/pain/to/type/and/remember
 
 
@@ -50,11 +50,11 @@ To use
 ------
 You get these shortcuts for using the regular bash directory stack:
 
-go [path]
+to [path]
 - perform a silent pushd. Change to the supplied directory by pushing its path onto the directory
 stack. This command takes a regular path (not a link name) - it's just pushd under the hood
 
-og
+ot
 - perform a silent popd. Change to a new directory by popping the directory stack, then changing to
 the path at the top of the stack. This is just popd under the hood
 
@@ -70,9 +70,9 @@ rmd [link name]
 cdd [link name]
 - change directory to the link stored under the name name, or the name "default".
 
-god [link name]
+tod [link name]
 - change directory to the link stored under the name, or the name "default", by using pushd to push
-onto the directory stack. Hint: you can use "og" or "popd" to return back to the previous path.
+onto the directory stack. Hint: you can use "ot" or "popd" to return back to the previous path.
 
 pwdd [link name]
 - print the path stored under link name, or the name "default"
