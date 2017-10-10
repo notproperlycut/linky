@@ -19,23 +19,23 @@ rmd() {
 
 cdd() {
 	link=${1:-default}
-	cd `readlink -e ~/linky/$link`
+	cd `readlink ~/linky/$link`
 }
 
 tod() {
 	link=${1:-default}
-	to `readlink -e ~/linky/$link`
+	to `readlink ~/linky/$link`
 }
 
 pwdd() {
 	link=${1:-default}
-	readlink -e ~/linky/$link
+	readlink ~/linky/$link
 }
 
 lsd() {
 	for link in `ls ~/linky`
 	do
-		echo [$link]  `readlink -e ~/linky/$link`
+		echo [$link]  `readlink ~/linky/$link`
 	done
 }
 
